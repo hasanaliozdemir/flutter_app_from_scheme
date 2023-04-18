@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  TextEditingController controller = TextEditingController();
+  MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,10 +12,26 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Material App Bar'),
+          title: const Text('App Builder'),
         ),
-        body: const Center(
-          child: Text('Hello World'),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Enter special GUID'),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextField(
+                  controller: controller,
+                  decoration: InputDecoration(border: OutlineInputBorder()),
+                ),
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              ElevatedButton(onPressed: () {}, child: Text('Build'))
+            ],
+          ),
         ),
       ),
     );
