@@ -115,3 +115,165 @@ final Map cardSliderItemData = {
   ],
   "rowflex": 21,
 };
+
+var fakeAllData = {
+  "footer": "blabla",
+  "background": "#000FFF",
+  "background_image": "",
+  "pages": [
+    {
+      "name": "mainpage",
+      "header": {
+        "TypeID": 8,
+        "rowFlex": 5,
+        "title": "Header başlik",
+        "description": "header text",
+        "image": "header image url",
+        "textcolor": "#000FFF",
+        "backgroundcolor": "#FFF000",
+        "backgroundimage": "header image"
+      },
+      "icon": "blabla.com.tr",
+      "inMenu": true,
+      "rows": [
+        {
+          "row": 1,
+          "rowFlex": 2,
+          "components": [
+            {
+              "TypeID": 0,
+              "rowFlex": 3,
+              "color": "#FFFFFF",
+              "content": "yazı",
+              "position": "right"
+            },
+            {
+              "TypeID": 2,
+              "rowFlex": 3,
+              "content": "Tikla",
+              "color": "#0000FF",
+              "ActionType": "href veya route",
+              "Action": "link veya page",
+              "position": "left"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "rowFlex": 3,
+          "components": [
+            {"TypeID": 9, "rowFlex": 1, "height": 5}
+          ]
+        },
+        {
+          "row": 3,
+          "rowFlex": 4,
+          "components": [
+            {"TypeID": 4, "rowFlex": 1, "position": "center"}
+          ]
+        },
+        {
+          "row": 4,
+          "rowFlex": 4,
+          "components": [
+            {
+              "TypeID": 7,
+              "rowFlex": 6,
+              "cards": [
+                {
+                  "TypeID": 6,
+                  "rowFlex": 3,
+                  "title": "Card Baslik",
+                  "description": "Card Text",
+                  "image": "Image varsa url veya icon",
+                  "position": "center",
+                  "textcolor": "#0000FF",
+                  "backgroundcolor": "#FFFF00"
+                },
+                {
+                  "TypeID": 6,
+                  "rowFlex": 5,
+                  "title": "Baslik",
+                  "description": "Description",
+                  "image": "icon veya image",
+                  "position": "center",
+                  "textcolor": "#0000FF",
+                  "backgroundcolor": "#0000FF"
+                }
+              ],
+              "position": "center"
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "rowFlex": 1,
+          "components": [
+            {
+              "TypeID": 5,
+              "rowFlex": 3,
+              "position": "center",
+              "media": [
+                {"platform": "facebook", "link": "www.facebook.com"},
+                {"platform": "twitter", "link": "www.twitter.com"}
+              ]
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "rowFlex": 3,
+          "components": [
+            {
+              "TypeID": 6,
+              "rowFlex": 3,
+              "title": "SoloCardBaslik",
+              "description": "SoloCardDescription",
+              "image": "SoloCardImage",
+              "position": "center",
+              "textcolor": "#9000F",
+              "backgroundcolor": "#9000F"
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "rowFlex": 4,
+          "components": [
+            {
+              "TypeID": 1,
+              "rowFlex": 5,
+              "link": "soloimagelink",
+              "position": "center"
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "rowFlex": 55,
+          "components": [
+            {
+              "TypeID": 3,
+              "rowFlex": 6,
+              "imgs": [
+                {
+                  "TypeID": 1,
+                  "rowFlex": 8,
+                  "link": "sliderimagelink",
+                  "position": "center"
+                },
+                {
+                  "TypeID": 1,
+                  "rowFlex": 5,
+                  "link": "denemelink",
+                  "position": "center"
+                }
+              ],
+              "position": "center"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
