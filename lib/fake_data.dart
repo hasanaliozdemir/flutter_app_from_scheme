@@ -138,7 +138,7 @@ var fakeAllData = {
       "rows": [
         {
           "row": 1,
-          "rowFlex": 2,
+          "rowFlex": 1,
           "components": [
             {
               "TypeID": 0,
@@ -160,9 +160,9 @@ var fakeAllData = {
         },
         {
           "row": 2,
-          "rowFlex": 3,
+          "rowFlex": 1,
           "components": [
-            {"TypeID": 9, "rowFlex": 1, "height": 5}
+            {"TypeID": 9, "rowFlex": 1, "height": 1}
           ]
         },
         {
@@ -238,12 +238,13 @@ var fakeAllData = {
         },
         {
           "row": 7,
-          "rowFlex": 4,
+          "rowFlex": 2,
           "components": [
             {
               "TypeID": 1,
               "rowFlex": 5,
-              "link": "soloimagelink",
+              "link":
+                  "https://s2.coinmarketcap.com/static/img/coins/200x200/24448.png",
               "position": "center"
             }
           ]

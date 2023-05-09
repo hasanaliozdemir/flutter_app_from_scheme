@@ -33,11 +33,14 @@ class WidgetService {
     print(data);
     switch (data['TypeID']) {
       case 0: // Text
-        return Align(
-          alignment: positionAlign(data['position']),
-          child: Text(
-            data['content'],
-            style: TextStyle(color: data['color'].toString().toColor()),
+        return Container(
+          color: Colors.yellow,
+          child: Align(
+            alignment: positionAlign(data['position']),
+            child: Text(
+              data['content'],
+              style: TextStyle(color: data['color'].toString().toColor()),
+            ),
           ),
         );
       case 1: // IMAGE
